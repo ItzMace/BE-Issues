@@ -1,0 +1,76 @@
+# BomberEgg Configuration File
+BomberEgg:
+  # Do not change this value:
+  config: 1
+  
+  # Displays a Scoreboard on the right side of the screen with some information
+  # Placeholders:
+  # {disable}		|		Hides a row
+  # {empty}			|		Shows an empty row
+  # {version}		|		Shows the Plugin Version
+  # {spigot}		|		Shows the Spigot Version
+  # {players}		|		Shows the amount of players on the server
+  #	{spectators}	|		Shows the amount of spectators on the server
+  #	{alives}		|		Shows the amount of alive players on the server
+  # {empty}			|		Shows an empty row
+  # {timer}			|		Shows a countdown
+  # {minplayers}	|		Shows the minimal amount of players of game start
+  # {map}			|		Shows the current map
+  Scoreboard:
+    Lobby:
+      enabled: true
+      Style:
+        header: " &f&lBomberEgg   &e{timer}"
+        score_14: " &oBE {version}"
+        score_13: "{disable}"
+        score_12: "{disable}"
+        score_11: "{disable}"
+        score_10: "{disable}"
+        score_9: "{empty}"
+        score_8: "&7Online players"
+        score_7: " &8» &a{players}"
+        score_6: "{empty}"
+        score_5: "&7Players required"
+        score_4: " &8» &a{minplayers}"
+        score_3: "{empty}"
+        score_2: "&7Map"
+        score_1: " &8» &b{map}"
+        score_0: "{empty}"
+    Ingame:
+      enabled: true
+      Style:
+        header: " &f&lBomberEgg   &e{timer}"
+        score_14: "&oBE {version}"
+        score_13: "{empty}"
+        score_12: "{p}"
+        score_11: "{disable}"
+        score_10: "{disable}"
+        score_9: "{disable}"
+        score_8: "{disable}"
+        score_7: "{disable}"
+        score_6: "{disable}"
+        score_5: "{disable}"
+        score_4: "{disable}"
+        score_3: "{disable}"
+        score_2: "{disable}"
+        score_1: "{disable}"
+        score_0: "{disable}"
+    AfterGame:
+      enabled: true
+      Style:
+        header: " &f&lBomberEgg   &e{timer}"
+        score_14: " &oBE {version}"
+        score_13: "{disable}"
+        score_12: "{disable}"
+        score_11: "{disable}"
+        score_10: "{disable}"
+        score_9: "{disable}"
+        score_8: "{disable}"
+        score_7: "{empty}"
+        score_6: "&7The game has end."
+        score_5: " &7Server will restart now."
+        score_4: "{empty}"
+        score_3: "{empty}"
+        score_2: "{disable}"
+        score_1: "{disable}"
+        score_0: "{disable}"

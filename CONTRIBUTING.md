@@ -1,4 +1,4 @@
-_When creating an issue, please include lots and lots of detail. Videos are preferred, screenshots and full console logs at the very minimum. The following will also be nessecary:_
+_When creating an issue, please include lots and lots of detail. Videos are preferred, screenshots and full console logs are the very minimum. The following will also be nessecary:_
 - BE version
 - Full plugin list
 - Explanation of how to reproduce the issue.

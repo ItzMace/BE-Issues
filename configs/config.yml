@@ -1,0 +1,63 @@
+# BomberEgg Configuration File
+BomberEgg:
+  # Do not change this value:
+  config: 1
+  # Do you want this plugin to be on a Standalone Server?
+  # Standalone means, that this is the only gametype on the server
+  # If true: The plugin will be the only gametype on the server
+  # If false: You use a MultiWorld System on your Server (Multiverse etc)
+  # (NOT SUPPORTED AT THE MOMENT!)
+  standaloneServer: true
+  # Where should the players be teleported to when joining
+  LobbyWorld: "world"
+  # Prevent the players to stomp wheat in the lobby world?
+  PreventStomping: true
+  # Lobby Location
+  LobbyLocation:
+    X: 0
+    Y: 10
+    Z: 0
+
+  # Item Manager
+  ItemManager:
+    # The item which will fire eggs on right-click
+    EggShooter:
+      # Displayname of the Item
+      Name: "&aEgg Shooter"
+      # Material of the Item
+      Material: WOOD_HOE
+      # How long should be the delay before using the egg shooter again?
+      # in ticks. (20 ticks = 1 second)
+      ResetTicks: 15
+    Blocks:
+      # Material of the Blocks a player can place, recieve and break
+      Material: SANDSTONE
+      # How long should be the delay before recieving a new block?
+      ResetTicks: 20
+
+# Here you can edit gameplay relevant settings
+Gameplay:
+  # Minimum amount of players required for game start
+  MinPlayers: 5
+  # Maximum amount of players being able to join
+  MaxPlayers: 16
+  # Do you want to fully disallow Block Breaks in the Lobby World?
+  disallowBlockBreaksInLobbyWorld: true
+
+  # Specific Round Phase Settings
+  Phases:
+    # Change Lobby Phase specific settings
+    Lobby:
+      # To which time should the countdown be reset when
+      # there are not enough players to start (in Seconds)
+      Timer: 90
+      # Sould we shorten the wait time when the server is full?
+      InstantStartOnFull: false
+      # Do you wish to see the countdown in your exp-bar?
+      XPCountdown: true
+    Ingame:
+      # How long should the livegame be in total (+Warmup) (in Seconds)
+      TotalTime: 600
+      # How long should the players have time to equip before
+      # PVP will be enabled (in Seconds)
+      Warmup: 60

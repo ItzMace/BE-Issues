@@ -1,0 +1,62 @@
+# BomberEgg Configuration File (Maps)
+Maps:
+  # Do not change this value:
+  config: 1
+  
+  # DO NOT LEAVE OUT ANY NUMBER IN THE MAP ID! (map_0, map_1, map_2...)
+  # This is the first example map (does not exists automaticaly!)
+  map_0:
+    # The name of the map
+    name: "Example Map 1"
+    # Is this map enabled?
+    enabled: false
+    # By who is this map created?
+    builder: "M4CE"
+    # This defines the usual world-name that will be loaded (the world folder the map is inside)
+    mapfolder: "map0"
+    # This defines the backup world folder (the world folder the backup map is inside)
+    backupfolder: "map0_backup"
+    # From here on, the spawns for the Map are defined:
+    # You can create as many spawns as you wish to
+    # DO NOT LEAVE OUT ANY NUMBER IN THE SPAWN ID! (spawn0, spawn1, spawn2...)
+    spawns:
+      spawn0:
+        x: 0
+        y: 30
+        z: 0
+      spawn1:
+        x: 100
+        y: 30
+        z: 0
+      spawn2:
+        x: 100
+        y: 30
+        z: 100
+  # This is the second example map (does not exists automaticaly!)
+  map_1:
+    # The name of the map
+    name: "Example Map 2"
+    # Is this map enabled?
+    enabled: false
+    # By who is this map created?
+    builder: "M4CE"
+    # This defines the usual world-name that will be loaded (the world folder the map is inside)
+    mapfolder: "map1"
+    # This defines the backup world folder (the world folder the backup map is inside)
+    backupfolder: "map1_backup"
+    # From here on, the spawns for the Map are defined:
+    # You can create as many spawns as you wish to
+    # DO NOT LEAVE OUT ANY NUMBER IN FRONT OF THE SPAWNS! (0, 1, 2...)
+    spawns:
+      spawn0:
+        x: 0
+        y: 30
+        z: 0
+      spawn1:
+        x: 100
+        y: 30
+        z: 0
+      spawn2:
+        x: 100
+        y: 30
+        z: 100

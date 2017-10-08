@@ -1,0 +1,70 @@
+# BomberEgg Configuration File
+BomberEgg:
+  # Do not change this value:
+  config: 1
+  
+  # Custom declareration of messages being send ingame
+  # (Chat) Messages can be edited here:
+  # Placeholders:
+  # {name}		            |		Displays the Name of a specific player (depends on context)
+  # {displayname}           |		Displays the DisplayName of a specific player (depends on context)
+  # {playerlistname}        |		Displays the PlayerListName of a specific player (depends on context)
+  # {br}			        |		Linebreak (Starts a new line)
+  # {minplayers}	        |		Shows the amount of players that are required to start the game
+  # {lobbytimer}	        |		Shows the current lobby timer (in seconds) until game starts
+  # {alives}	            |		Shows the amount of alive players
+  Messages:
+    # The Prefix will be printed in front of every message
+    prefix: "&7[&4BomberEgg&7]"
+    # This message will be send on join [Placeholders: {name}, {displayname}, {playerlistname}]
+    join_message: "&a[+] &7Player &6{name} &7has joined the game"
+    # This message will be send on quit [Placeholders: {name}, {displayname}, {playerlistname}]
+    quit_message: "&c[-] &7Player &e{name} &7has quit the game"
+    # This message will be send when there are not enough players to start the game
+    lobby_notEnoughPlayers: "&cThe game needs at least {minplayers} players to start!{br}The timer has been set to {lobbytimer} seconds!"
+    # This message will be send when there are not enough players to start the game
+    lobby_countdown: "&7Game starts in &6{lobbytimer} seconds"
+    # This message will be send when the time runs out and no winner is given
+    end_gameTimedOut: "&cThe time is over!{br}There is no winner in this game"
+    # This message will be send when the server is about to shut down
+    end_restarting: "&cServer is restarting in {timer} seconds.."
+    # This message will be send when a player dies without other players damage
+    player_lost_life: "&7Player &c{name} &7lost a life"
+    # This message will be send when all players left the game and there is no winner
+    noWinnerLeft: "&cThere is no winner! Restarting server!"
+    # This message will be send when a player won BomberEgg
+    playerWon: "&7The player &6&l{name}&7 has won BomberEgg"
+    # This message will be send when player don't have enough permission
+    missingPermission: "&cYou don't have permission to do that"
+    # This message will be send when a player is out of the game
+    playerOutOfGame: "&eThe player &6{name}&e is out of the game{br}&eThere are &f{alives} players&e left"
+    # This message will be send when a player gets spectator
+    spectator: "&bYou are now a Spectator!"
+    # This is the headline of the Map Voting section in Chat
+    mapVoting: "&cBomberEgg Mapvoting"
+    # This is the syntax of one entry of the Map Voting section in Chat
+    mapVotingEntry: "&7[&f{mapid}&7] &6{map} &f({votes})"
+    # This will be send to the player, when he/she voted for a map
+    votedFor: "&aYou voted for Map: &6{map}"
+    # This will be send to the player, when he/she can't vote for a specific map (e.g. vote time over)
+    cantVote: "&cYou can't vote for that map!"
+    # This will be send to the player, when he/she already voted for a specific map
+    alreadyVoted: "&cYou have already voted for a map!"
+    # This message will be send to the player to show how to vote for a map
+    voteSyntax: "&aUse '/vote <MapID>' to vote for a map."
+    # This will be send to a authorized person when he/she forced a map to be played
+    mapForced: "&aYou forced this map to be played on: &6{map}"
+    # This will be send to a player when he/she uses the /start command
+    gameStarted: "&aYou started the game..."
+    # This will be send to all players when the map voting is over
+    mapVotingOver: "&cThe map voting is over!"
+    # This message will be send to all players when the map voting is over (Map Name)
+    mapName: "&7Map: {mapname}"
+    # This message will be send to all players when the map voting is over (Map Builder)
+    mapBuilder: "&7Builder: {mapbuilder}"
+    # This is how the Spectate-Item is called ingame
+    itemSpectate: "&aSpectate"
+    # This will be send to a player when he/she selects a player to spectate
+    spectatePlayer: "&bYou are now spectating: {name}"
+    # This will be send to a player when he/she blocks projectiles as a spectator
+    projectileBlock: "&cPlease do not block arrows (or other projectiles)!"

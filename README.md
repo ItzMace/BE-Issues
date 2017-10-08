@@ -1,7 +1,7 @@
 # BomberEgg - Issues
 BE - Issue Tracker. 
 
-When creating an issue, please include lots and lots of detail. Videos are preferred, screenshots and full console logs at the very minimum. The following will also be nessecary:
+When creating an issue, please include lots and lots of detail. Videos are preferred, screenshots and full console logs are the very minimum. The following will also be nessecary:
 - "BomberEgg" version
 - Full plugin list
 - Explanation of how to reproduce the issue.
