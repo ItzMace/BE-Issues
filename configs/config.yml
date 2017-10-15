@@ -1,7 +1,7 @@
 # BomberEgg Configuration File
 BomberEgg:
   # Do not change this value:
-  config: 1
+  config: 2
   # Do you want this plugin to be on a Standalone Server?
   # Standalone means, that this is the only gametype on the server
   # If true: The plugin will be the only gametype on the server
@@ -12,6 +12,8 @@ BomberEgg:
   LobbyWorld: "world"
   # Prevent the players to stomp wheat in the lobby world?
   PreventStomping: true
+  # Prevents the weather to switch to rain
+  ForceClearWeather: true
   # Lobby Location
   LobbyLocation:
     X: 0
