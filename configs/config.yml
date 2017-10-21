@@ -1,7 +1,7 @@
-# BomberEgg Configuration File
+# BomberEgg Configuration File x%%__USER__%%
 BomberEgg:
   # Do not change this value:
-  config: 2
+  config: 3
   # Do you want this plugin to be on a Standalone Server?
   # Standalone means, that this is the only gametype on the server
   # If true: The plugin will be the only gametype on the server
@@ -14,6 +14,8 @@ BomberEgg:
   PreventStomping: true
   # Prevents the weather to switch to rain
   ForceClearWeather: true
+  # To which time should be set the timer when user enters /start or /forcestart?
+  CountdownOnStartCommand: 12
   # Lobby Location
   LobbyLocation:
     X: 0
@@ -43,6 +45,8 @@ Gameplay:
   MinPlayers: 5
   # Maximum amount of players being able to join
   MaxPlayers: 16
+  # How many lifes should a player have on game start?
+  StartLifesAmount: 5
   # Do you want to fully disallow Block Breaks in the Lobby World?
   disallowBlockBreaksInLobbyWorld: true
 
