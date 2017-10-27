@@ -1,7 +1,7 @@
 # BomberEgg Configuration File
 BomberEgg:
   # Do not change this value:
-  config: 1
+  config: 2
   
   # Custom declareration of messages being send ingame
   # (Chat) Messages can be edited here:
@@ -33,17 +33,17 @@ BomberEgg:
     # This message will be send when all players left the game and there is no winner
     noWinnerLeft: "&cThere is no winner! Restarting server!"
     # This message will be send when a player won BomberEgg
-    playerWon: "&7The player &6&l{name}&7 has won BomberEgg"
+    playerWon: "&aThe player &6&l{name}&a has won BomberEgg"
     # This message will be send when player don't have enough permission
     missingPermission: "&cYou don't have permission to do that"
     # This message will be send when a player is out of the game
-    playerOutOfGame: "&eThe player &6{name}&e is out of the game{br}&eThere are &f{alives} players&e left"
+    playerOutOfGame: "&7The player &6{name}&7 is out of the game{br}&7There are &f{alives} players&7 left"
     # This message will be send when a player gets spectator
     spectator: "&bYou are now a Spectator!"
     # This is the headline of the Map Voting section in Chat
-    mapVoting: "&cBomberEgg Mapvoting"
+    mapVoting: "&cBomberEgg Mapvoting{br}&7Click a map in chat or{br}enter /vote # to vote for a map."
     # This is the syntax of one entry of the Map Voting section in Chat
-    mapVotingEntry: "&7[&f{mapid}&7] &6{map} &f({votes})"
+    mapVotingEntry: "&7[&f{mapid}&7] &6{map} &f({votes} Votes)"
     # This will be send to the player, when he/she voted for a map
     votedFor: "&aYou voted for Map: &6{map}"
     # This will be send to the player, when he/she can't vote for a specific map (e.g. vote time over)
@@ -68,3 +68,5 @@ BomberEgg:
     spectatePlayer: "&bYou are now spectating: {name}"
     # This will be send to a player when he/she blocks projectiles as a spectator
     projectileBlock: "&cPlease do not block arrows (or other projectiles)!"
+    # Invalid Syntax message:
+    invalidSyntax: "&cPlease use the following command: {usage}"
