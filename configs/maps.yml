@@ -1,7 +1,7 @@
 # BomberEgg Configuration File (Maps)
 Maps:
   # Do not change this value:
-  config: 1
+  config: 2
   
   # DO NOT LEAVE OUT ANY NUMBER IN THE MAP ID! (map_0, map_1, map_2...)
   # This is the first example map (does not exists automaticaly!)
@@ -24,14 +24,20 @@ Maps:
         x: 0
         y: 30
         z: 0
+        pitch: 0
+        yaw: 0
       spawn1:
         x: 100
         y: 30
         z: 0
+        pitch: 0
+        yaw: 0
       spawn2:
         x: 100
         y: 30
         z: 100
+        pitch: 0
+        yaw: 0
   # This is the second example map (does not exists automaticaly!)
   map_1:
     # The name of the map
@@ -52,11 +58,17 @@ Maps:
         x: 0
         y: 30
         z: 0
+        pitch: 0
+        yaw: 0
       spawn1:
         x: 100
         y: 30
         z: 0
+        pitch: 0
+        yaw: 0
       spawn2:
         x: 100
         y: 30
         z: 100
+        pitch: 0
+        yaw: 0
