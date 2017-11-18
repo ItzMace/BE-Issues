@@ -1,7 +1,7 @@
 # BomberEgg Configuration File
 BomberEgg:
   # Do not change this value:
-  config: 2
+  config: 3
   
   # Custom declareration of messages being send ingame
   # (Chat) Messages can be edited here:
@@ -23,13 +23,15 @@ BomberEgg:
     # This message will be send when there are not enough players to start the game
     lobby_notEnoughPlayers: "&cThe game needs at least {minplayers} players to start!{br}The timer has been set to {lobbytimer} seconds!"
     # This message will be send when there are not enough players to start the game
-    lobby_countdown: "&7Game starts in &6{lobbytimer} seconds"
+    lobby_countdown: "&7Game starts in &6{lobbytimer} second(s)"
     # This message will be send when the time runs out and no winner is given
     end_gameTimedOut: "&cThe time is over!{br}There is no winner in this game"
     # This message will be send when the server is about to shut down
-    end_restarting: "&cServer is restarting in {timer} seconds.."
+    end_restarting: "&cServer is restarting in {timer} second(s).."
     # This message will be send when a player dies without other players damage
     player_lost_life: "&7Player &c{name} &7lost a life"
+    # This message will be send when a player dies with other players damage
+    player_was_killed: "&7Player &c{name} &7was killed by &c{killer_name}"
     # This message will be send when all players left the game and there is no winner
     noWinnerLeft: "&cThere is no winner! Restarting server!"
     # This message will be send when a player won BomberEgg
@@ -59,9 +61,9 @@ BomberEgg:
     # This will be send to all players when the map voting is over
     mapVotingOver: "&cThe map voting is over!"
     # This message will be send to all players when the map voting is over (Map Name)
-    mapName: "&7Map: {mapname}"
+    mapName: "&7Map: &6{mapname}"
     # This message will be send to all players when the map voting is over (Map Builder)
-    mapBuilder: "&7Builder: {mapbuilder}"
+    mapBuilder: "&7Builder: &6{mapbuilder}"
     # This is how the Spectate-Item is called ingame
     itemSpectate: "&aSpectate"
     # This will be send to a player when he/she selects a player to spectate
