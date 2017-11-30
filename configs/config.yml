@@ -1,7 +1,7 @@
-# BomberEgg Configuration File x%%__USER__%%
+# BomberEgg Configuration File
 BomberEgg:
   # Do not change this value:
-  config: 4
+  config: 5
   # Do you want this plugin to be on a Standalone Server?
   # Standalone means, that this is the only gametype on the server
   # If true: The plugin will be the only gametype on the server
@@ -16,6 +16,9 @@ BomberEgg:
   ForceClearWeather: true
   # To which time should be set the timer when user enters /start or /forcestart?
   CountdownOnStartCommand: 12
+  # [BungeeCord] Where do you want players to be send when the game is over?
+  useFallbackServer: false
+  fallbackServer: "hubserver"
   # Lobby Location
   LobbyLocation:
     X: 0
