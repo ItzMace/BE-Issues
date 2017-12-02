@@ -1,7 +1,7 @@
 # BomberEgg Configuration File
 BomberEgg:
   # Do not change this value:
-  config: 5
+  config: 6
   # Do you want this plugin to be on a Standalone Server?
   # Standalone means, that this is the only gametype on the server
   # If true: The plugin will be the only gametype on the server
@@ -16,9 +16,30 @@ BomberEgg:
   ForceClearWeather: true
   # To which time should be set the timer when user enters /start or /forcestart?
   CountdownOnStartCommand: 12
-  # [BungeeCord] Where do you want players to be send when the game is over?
-  useFallbackServer: false
-  fallbackServer: "hubserver"
+  # The following configuration options will only work on Bungeecord <> Spigot servers.
+  Bungeecord:
+    # Where do you want players to be send when the game is over?
+    useFallbackServer: false
+    fallbackServer: "hubserver"
+    # Do you want to use the custom leave commands?
+    enableLeaveCommands: false
+    # Do you want to use the default fallback server to redirect players to?
+    leaveCommandRedirectToFallbackServer: true
+    # If the above option is set to false, set the redirect server here:
+    leaveCommandRedirect: "redirectserver"
+  # MOTD Manager
+  # Placeholder:
+  #  {players} = Online Players Amount
+  #  {maxplayers} = Maxmimal Players Amount
+  MOTD:
+    # Do you wish to use the custom MOTD manager?
+    useCustomMOTD: false
+    # What should be the lobby phase MOTD?
+    motd_phase_lobby: "&aBomberEgg &7> &aLOBBY"
+    # What should be the ingame phase MOTD?
+    motd_phase_ingame: "&aBomberEgg &7> &cINGAME"
+    # What should be the restarting phase MOTD?
+    motd_phase_gameover: "&aBomberEgg &7> &eRESTARTING"
   # Lobby Location
   LobbyLocation:
     X: 0
