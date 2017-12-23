@@ -1,7 +1,7 @@
 # BomberEgg Configuration File
 BomberEgg:
   # Do not change this value:
-  config: 6
+  config: 7
   # Do you want this plugin to be on a Standalone Server?
   # Standalone means, that this is the only gametype on the server
   # If true: The plugin will be the only gametype on the server
@@ -40,6 +40,36 @@ BomberEgg:
     motd_phase_ingame: "&aBomberEgg &7> &cINGAME"
     # What should be the restarting phase MOTD?
     motd_phase_gameover: "&aBomberEgg &7> &eRESTARTING"
+  # STATISTICS MANAGER
+  # NOTE: This is only working with MySQL.
+  Statistics:
+    # Do you want to use the statistics system?
+    enable: false
+    # MySQL Login Data
+    mysql:
+      host: "localhost"
+      port: "3306"
+      database: "bomberegg"
+      user: "root"
+      password: ""
+    # From here on, you can decide which statistic should be recorded:
+    recordedStatistics:
+      # Do you want to track the time a player is online in total?
+      onlinetime: false
+      # Do you want to track the time a player is waiting in lobby?
+      onlinetime_lobby: true
+      # Do you want to track the time a player is spectating?
+      onlinetime_spec: true
+      # Do you want to track the time a player is ingame?
+      onlinetime_ingame: true
+      # Do you want to track the amount of players another player has killed?
+      kills: true
+      # Do you want to track the amount of times a player has died?
+      deaths: true
+      # Do you want to track the amount of times a player has won BomberEgg?
+      wins: true
+      # Do you want to track the amount of times a player has started a game of BomberEgg?
+      games: true
   # Lobby Location
   LobbyLocation:
     X: 0
@@ -60,6 +90,8 @@ BomberEgg:
     Blocks:
       # Material of the Blocks a player can place, recieve and break
       Material: SANDSTONE
+      # How many blocks should the player have maximal?
+      MaxAmount: 16
       # How long should be the delay before recieving a new block?
       ResetTicks: 20
 
