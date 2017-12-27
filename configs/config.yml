@@ -1,7 +1,7 @@
 # BomberEgg Configuration File
 BomberEgg:
   # Do not change this value:
-  config: 7
+  config: 8
   # Do you want this plugin to be on a Standalone Server?
   # Standalone means, that this is the only gametype on the server
   # If true: The plugin will be the only gametype on the server
@@ -108,6 +108,23 @@ Gameplay:
 
   # Do you want to disable TNT block breaking?
   disableTNTBlockBreaking: false
+
+  # Win-Effect at the end of the game
+  WinEffect:
+    # Title-Manager
+    Title:
+      # Do you want the Title-Manager to be enabled?
+      enabled: true
+      # Top-Line:
+      line_top: "&6Victory!"
+      # Bottom-Line:
+      line_bottom: "&aYou have won this game of &6BomberEgg"
+    # Firework-Manager
+    Firework:
+      # Do you want the Firework-Manager to be enabled?
+      enabled: true
+      # How many fireworks do you want to be shot into the air?
+      amount: 3
 
   # Specific Round Phase Settings
   Phases:
